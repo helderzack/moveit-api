@@ -1,7 +1,11 @@
 package moveit.api.dto;
 
+import java.util.UUID;
+
 public class ChallengeDTO {
-  private int challengeId;
+  private UUID challengeUUID;
+
+  private int challengePK;
 
   private String type;
 
@@ -9,12 +13,20 @@ public class ChallengeDTO {
 
   private int experiencePoints;
 
-  public int getChallengeId() {
-    return challengeId;
+  public UUID getChallengeUUID() {
+    return challengeUUID;
   }
 
-  public void setChallengeId(int challengeId) {
-    this.challengeId = challengeId;
+  public void setChallengeUUID(UUID challengeUUID) {
+    this.challengeUUID = challengeUUID;
+  }
+
+  public int getChallengePK() {
+    return challengePK;
+  }
+
+  public void setChallengePK(int challengePK) {
+    this.challengePK = challengePK;
   }
 
   public String getType() {

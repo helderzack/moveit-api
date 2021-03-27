@@ -1,7 +1,11 @@
 package moveit.api.dto;
 
+import java.util.UUID;
+
 public class UserDTO {
-  private int userId;
+  private UUID userUUID;
+
+  private int userPK;
 
   private String name;
 
@@ -11,12 +15,20 @@ public class UserDTO {
 
   private int experience;
 
-  public int getUserId() {
-    return userId;
+  public UUID getUserUUID() {
+    return userUUID;
   }
 
-  public void setUserId(int userId) {
-    this.userId = userId;
+  public void setUserUUID(UUID userUUID) {
+    this.userUUID = userUUID;
+  }
+
+  public int getUserPK() {
+    return userPK;
+  }
+
+  public void setUserPK(int userPK) {
+    this.userPK = userPK;
   }
 
   public String getName() {
